@@ -8,6 +8,7 @@
 
 import UIKit
 import QuickLayout
+//import QuickLayout
 
 public class EKMessageContentView: UIView {
     
