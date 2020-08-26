@@ -40,3 +40,5 @@ Carthage/Build
 # SwiftPM
 .swiftpm/
 Package.resolved
+
+SwiftEntryKit.xcworkspace/xcshareddata
