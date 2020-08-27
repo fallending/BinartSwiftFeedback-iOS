@@ -1,14 +1,14 @@
 PODS:
+  - BinartSwiftFeedback (1.2.3):
+    - QuickLayout (= 3.0.0)
   - Nimble (8.0.1)
   - Quick (2.0.0)
   - QuickLayout (3.0.0)
-  - SwiftEntryKit (1.2.3):
-    - QuickLayout (= 3.0.0)
 
 DEPENDENCIES:
+  - BinartSwiftFeedback (from `../`)
   - Nimble (= 8.0.1)
   - Quick (= 2.0.0)
-  - SwiftEntryKit (from `../`)
 
 SPEC REPOS:
   trunk:
@@ -17,15 +17,15 @@ SPEC REPOS:
     - QuickLayout
 
 EXTERNAL SOURCES:
-  SwiftEntryKit:
+  BinartSwiftFeedback:
     :path: "../"
 
 SPEC CHECKSUMS:
+  BinartSwiftFeedback: ec6ca37fe9fb37ae8b3a7e2f14d766b3a7d69091
   Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
   Quick: ce1276c7c27ba2da3cb2fd0cde053c3648b3b22d
   QuickLayout: 07b45a72b10083fee3f095990cfed1c1e7b27f0a
-  SwiftEntryKit: 340713c2e4a6662c5149629990bf1088bf5f0389
 
-PODFILE CHECKSUM: cfefcd17a3b135cb5b254a0b85e280fd33f2919e
+PODFILE CHECKSUM: a3da9da21c39c49badc5859bcb8da58875836968
 
 COCOAPODS: 1.9.3

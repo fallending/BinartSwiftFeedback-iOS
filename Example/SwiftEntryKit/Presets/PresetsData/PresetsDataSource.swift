@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import SwiftEntryKit
+import BinartSwiftFeedback
 
 struct PresetsDataSource {
     

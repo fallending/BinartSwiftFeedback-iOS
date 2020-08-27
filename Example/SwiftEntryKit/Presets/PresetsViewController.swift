@@ -6,7 +6,7 @@
 //  Copyright (c) 2018 huri000@gmail.com. All rights reserved.
 //
 
-import SwiftEntryKit
+import BinartSwiftFeedback
 import UIKit
 
 /** This view controller offers presets to choose from */
@@ -975,11 +975,13 @@ extension PresetsViewController {
         let image = "ic_coffee_light"
         switch row {
         case 0:
-            showNotificationMessage(attributes: attributes,
-                                    title: title,
-                                    desc: desc,
-                                    textColor: .white,
-                                    imageName: image)
+//            showNotificationMessage(attributes: attributes,
+//                                    title: title,
+//                                    desc: desc,
+//                                    textColor: .white,
+//                                    imageName: image)
+            
+            BAFeedback.showToast(title)
         case 1:
             showNotificationMessage(attributes: attributes,
                                     title: title,

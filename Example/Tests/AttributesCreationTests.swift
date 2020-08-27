@@ -8,7 +8,7 @@
 
 import Quick
 import Nimble
-@testable import SwiftEntryKit
+@testable import BinartSwiftFeedback
 
 class AttributesCreation: QuickSpec {
 

@@ -28,9 +28,13 @@ public class EKMessageContentView: UIView {
         }
     }
     
-    public var subtitleContent: EKProperty.LabelContent! {
+    public var subtitleContent: EKProperty.LabelContent? {
         didSet {
-            subtitleLabel.content = subtitleContent
+            subtitleLabel.content = subtitleContent ?? EKProperty.LabelContent(text: "", style: .init(
+                font: .systemFont(ofSize: 16),
+                color: .clear,
+                displayMode: .inferred
+            ))
         }
     }
     

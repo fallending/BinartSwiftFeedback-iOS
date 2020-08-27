@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SwiftEntryKit
+import BinartSwiftFeedback
 
 extension UIColor {
     static func by(r: Int, g: Int, b: Int, a: CGFloat = 1) -> UIColor {

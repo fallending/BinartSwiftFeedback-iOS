@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SwiftEntryKit
+import BinartSwiftFeedback
 
 class SelectionBaseCell: UITableViewCell {
     func configure(attributesWrapper: EntryAttributeWrapper) {}

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import SwiftEntryKit
+import BinartSwiftFeedback
 
 struct TextFieldOptionSet: OptionSet {
     let rawValue: Int

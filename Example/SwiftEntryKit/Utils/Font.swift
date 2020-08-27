@@ -10,7 +10,7 @@ import UIKit
 
 typealias MainFont = Font.HelveticaNeue
 
-enum Font {
+public enum Font {
     enum HelveticaNeue: String {
         case ultraLightItalic = "UltraLightItalic"
         case medium = "Medium"
@@ -31,3 +31,5 @@ enum Font {
         }
     }
 }
+
+// 

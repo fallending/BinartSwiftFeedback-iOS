@@ -1,0 +1,6 @@
+framework module BinartSwiftFeedback {
+  umbrella header "BinartSwiftFeedback-umbrella.h"
+
+  export *
+  module * { export * }
+}

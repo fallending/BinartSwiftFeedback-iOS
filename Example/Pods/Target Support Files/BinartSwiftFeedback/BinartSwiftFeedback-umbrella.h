@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double SwiftEntryKitVersionNumber;
-FOUNDATION_EXPORT const unsigned char SwiftEntryKitVersionString[];
+FOUNDATION_EXPORT double BinartSwiftFeedbackVersionNumber;
+FOUNDATION_EXPORT const unsigned char BinartSwiftFeedbackVersionString[];
 

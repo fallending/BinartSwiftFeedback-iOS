@@ -6,7 +6,7 @@
 //  Copyright (c) 2018 huri000@gmail.com. All rights reserved.
 //
 
-import SwiftEntryKit
+import BinartSwiftFeedback
 
 final class AnimationSelectionTableViewCell: SelectionTableViewCell {
     

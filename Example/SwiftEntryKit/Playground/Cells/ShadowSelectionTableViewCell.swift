@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SwiftEntryKit
+import BinartSwiftFeedback
 
 final class ShadowSelectionTableViewCell: SelectionTableViewCell {
     override func configure(attributesWrapper: EntryAttributeWrapper) {

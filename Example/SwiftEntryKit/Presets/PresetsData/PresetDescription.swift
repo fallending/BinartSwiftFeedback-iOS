@@ -6,7 +6,7 @@
 //  Copyright (c) 2018 huri000@gmail.com. All rights reserved.
 //
 
-import SwiftEntryKit
+import BinartSwiftFeedback
 
 // Description of a single preset to be presented
 struct PresetDescription {

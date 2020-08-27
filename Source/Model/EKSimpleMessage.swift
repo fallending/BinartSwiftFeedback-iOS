@@ -17,11 +17,11 @@ public struct EKSimpleMessage {
     public let title: EKProperty.LabelContent
     
     /** The description label descriptor */
-    public let description: EKProperty.LabelContent
+    public let description: EKProperty.LabelContent?
         
     public init(image: EKProperty.ImageContent? = nil,
                 title: EKProperty.LabelContent,
-                description: EKProperty.LabelContent) {
+                description: EKProperty.LabelContent? = nil) {
         self.image = image
         self.title = title
         self.description = description

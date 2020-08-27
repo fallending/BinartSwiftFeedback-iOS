@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SwiftEntryKit
+import BinartSwiftFeedback
 
 class ExampleNavigationViewController: UINavigationController {
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {

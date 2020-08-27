@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SwiftEntryKit
+import BinartSwiftFeedback
 
 final class RoundCornersSelectionTableViewCell: SelectionTableViewCell {
     
