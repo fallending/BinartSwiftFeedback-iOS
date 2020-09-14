@@ -15,7 +15,7 @@ import Foundation
 
 public struct BAFeedbackConfig {
     
-    public static var amberColor = UIColor(rgb: 0xE91E63)
+    public static var amberColor = UIColor(rgb: 0x1B1B1B)
     public static var pinkyColor = UIColor(rgb: 0xFFC107)
     
     // MARK: = Toast

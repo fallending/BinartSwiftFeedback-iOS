@@ -23,7 +23,7 @@ public class BAFeedback {
         attributes.hapticFeedbackType = .success
         attributes.entryBackground = .gradient(
             gradient: .init(
-                colors: [EKColor(BAFeedbackConfig.amberColor), EKColor(BAFeedbackConfig.pinkyColor)],
+                colors: [EKColor(BAFeedbackConfig.amberColor), EKColor(BAFeedbackConfig.amberColor)],
                 startPoint: .zero,
                 endPoint: CGPoint(x: 1, y: 1)
             )
@@ -38,7 +38,7 @@ public class BAFeedback {
             with: .init(
                 color: .black,
                 opacity: 0.5,
-                radius: 10
+                radius: 20
             )
         )
         attributes.statusBar = .dark
@@ -54,8 +54,8 @@ public class BAFeedback {
         let title = EKProperty.LabelContent(
             text: title,
             style: .init(
-                font: .systemFont(ofSize: 16),
-                color: EKColor(BAFeedbackConfig.toastTitleColor),
+                font: UIFont.init(name: "PingFangSC-Medium", size: 14)!,
+                color: EKColor(UIColor(red: 255, green: 255, blue: 255, alpha: 0.9)),
                 displayMode: .inferred
             ),
             accessibilityIdentifier: "title"
