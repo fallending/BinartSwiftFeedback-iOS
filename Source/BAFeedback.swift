@@ -51,11 +51,11 @@ public class BAFeedback {
             pullbackAnimation: .easeOut
         )
         
-        let width = calculateTextWidth(title) + 32
+        let width = calculateTextWidth(title) + 52  // EKNotificationMessage内边距
         
         attributes.positionConstraints.maxSize = .init(
             width: .constant(value: width),
-            height: .constant(value: 40)
+            height: .constant(value: 30)
         )
         attributes.roundCorners = .all(radius: 18)
         
