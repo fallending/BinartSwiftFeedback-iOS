@@ -14,7 +14,7 @@ public struct EKNotificationMessage {
     public struct Insets {
         
         /** The insets of the content of the message, from the top, bottom, left, right */
-        public var contentInsets = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
+        public var contentInsets = UIEdgeInsets(top: 8, left: 16, bottom: 5, right: 16)
         
         /** The distance between the title and the description */
         public var titleToDescription: CGFloat = 5

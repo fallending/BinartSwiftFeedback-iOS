@@ -15,19 +15,23 @@ public class BAFeedback {
     
     // MARK: = Toast: title
     
+    private static func calculateTextWidth(_ text: String) -> CGFloat {
+        let font = getToastTextFont()
+        let rect = NSString(string: text).boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: font.lineHeight), options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font: font], context: nil)
+        return ceil(rect.width)
+    }
+    
+    private static func getToastTextFont() -> UIFont {
+        return UIFont.init(name: "PingFangSC-Medium", size: 14)!
+    }
+    
     public static func showToast (_ title: String) {
         var attributes: EKAttributes
         
         attributes = .topFloat
         attributes.displayMode = .inferred
         attributes.hapticFeedbackType = .success
-        attributes.entryBackground = .gradient(
-            gradient: .init(
-                colors: [EKColor(BAFeedbackConfig.amberColor), EKColor(BAFeedbackConfig.amberColor)],
-                startPoint: .zero,
-                endPoint: CGPoint(x: 1, y: 1)
-            )
-        )
+        attributes.entryBackground = .color(color: EKColor(BAFeedbackConfig.amberColor))
         attributes.popBehavior = .animated(
             animation: .init(
                 translate: .init(duration: 0.3),
@@ -38,7 +42,7 @@ public class BAFeedback {
             with: .init(
                 color: .black,
                 opacity: 0.5,
-                radius: 20
+                radius: 18
             )
         )
         attributes.statusBar = .dark
@@ -46,17 +50,23 @@ public class BAFeedback {
             swipeable: true,
             pullbackAnimation: .easeOut
         )
+        
+        let width = calculateTextWidth(title) + 32
+        
         attributes.positionConstraints.maxSize = .init(
-            width: .constant(value: UIScreen.main.minEdge),
-            height: .intrinsic
+            width: .constant(value: width),
+            height: .constant(value: 40)
         )
+        attributes.roundCorners = .all(radius: 18)
         
         let title = EKProperty.LabelContent(
             text: title,
             style: .init(
-                font: UIFont.init(name: "PingFangSC-Medium", size: 14)!,
+                font: getToastTextFont(),
                 color: EKColor(UIColor(red: 255, green: 255, blue: 255, alpha: 0.9)),
-                displayMode: .inferred
+                alignment: NSTextAlignment.center,
+                displayMode: .inferred,
+                numberOfLines: 1
             ),
             accessibilityIdentifier: "title"
         )
